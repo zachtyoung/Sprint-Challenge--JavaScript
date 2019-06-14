@@ -8,13 +8,13 @@
 
 // tyrannosaurus, carnivorous, 7000kg, 12m, Late Cretaceous
 const dino1 = {
-  name : "tyrannosaurus",
-  diet : "carnivorous",
-  weight : "7000kg",
-  length : "12m",
-  period : "Late Cretaceous",
-  roar : function (){
-    return `RAWERSRARARWERSARARARRRR!`
+  name: "tyrannosaurus",
+  diet: "carnivorous",
+  weight: "7000kg",
+  length: "12m",
+  period: "Late Cretaceous",
+  roar: () =>{
+    return "RAWERSRARARWERSARARARRRR!";
   }
 };
 // stegosaurus, herbivorous, 2000kg, 9m, Late Jurassic
@@ -49,7 +49,7 @@ console.log(dino1.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log(dino1.roar);
+console.log(dino1.roar());
 
 
 // ==== Arrays ====
@@ -85,10 +85,7 @@ console.log(contactInfo);
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
 const uni = []
-graduates.forEach(function(el) {
-  if(el.university.includes("Uni"))
-  uni.push(el)
-});
+graduates.forEach(el => { if(el.university.includes("Uni")) uni.push(el)});
 console.log(uni);
 
 
@@ -114,9 +111,8 @@ The zoo wants to display both the scientific name and the animal name in front o
 
 */
 const animalNames = [];
-zooAnimals.forEach(function(el){
-animalNames.push(`Name: ${el.animal_name}, Scientific: ${el.scientific_name}`)
-});
+zooAnimals.forEach(el=> animalNames.push(`Name: ${el.animal_name}, Scientific: ${el.scientific_name}`)
+);
 console.log(animalNames);
 
 /* Request 2: .map()    

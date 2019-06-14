@@ -14,6 +14,7 @@
           return this.length * this.width * this.height 
         }
       surfaceArea (){
+          // verbose for my rusty math skills lol
         const a = 2 *( this.length * this.width)
         const b = 2 *( this.length * this.height)
         const c = 2 *( this.width * this.height)
